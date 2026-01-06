@@ -24,6 +24,7 @@
   -- BlogList.jsx
   -- BlogCard.jsx
   -- Newsletter.jsx
+  -- Footer.jsx
 - pages
   -- Home.jsx
   -- Blog.jsx
