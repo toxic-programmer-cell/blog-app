@@ -8,10 +8,19 @@
 - Installed TailwindCSS
 - Installed react router dom
 - Created component and pages folder inside src folder
+  -- src
+  --- component
+  --- pages
+- created Header component
+- created BlogList component
+- installed motion for animation(for BlogList category now)
+
+# folder structure
+
 - component
   -- Navbar.jsx
   -- Header.jsx
+  -- BlogList.jsx
 - pages
   -- Home.jsx
   -- Blog.jsx
-- created Header component

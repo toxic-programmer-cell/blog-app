@@ -27,7 +27,7 @@ function Header() {
           />
           <button
             type="submit"
-            className="bg-primary text-white py-1.5 px-2 rounded"
+            className="bg-primary text-white py-1.5 px-4 rounded"
           >
             Search
           </button>
