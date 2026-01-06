@@ -10,6 +10,8 @@
 - Created component and pages folder inside src folder
 - component
   -- Navbar.jsx
+  -- Header.jsx
 - pages
   -- Home.jsx
   -- Blog.jsx
+- created Header component
