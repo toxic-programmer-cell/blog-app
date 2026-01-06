@@ -4,11 +4,29 @@ import { assets } from "../assets/assets";
 function Header() {
   return (
     <div className="mx-8 sm:mx-16 xl:mx-24 relative">
+      <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-primary/30 via-purple-300/30 to-pink-300/30 blur-3xl"></div>
+
       <div className="text-center mt-20 mb-8 ">
-        <div className="inline-flex items-center bg-primary/10 gap-4 text-sm rounded-full py-1.5 px-4 mb-2 border border-primary/10 ">
+        {/* <div className="inline-flex items-center bg-primary/10 gap-4 text-sm rounded-full py-1.5 px-4 mb-2 border border-primary/10 ">
           <p>New AI feature integrated</p>
           <img src={assets.star_icon} alt="star-icon" className="w-2.5" />
+        </div> */}
+        <div
+          className="relative inline-flex p-[1.5px] mb-2 rounded-full 
+                bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
+                animate-border"
+        >
+          <div
+            className="inline-flex items-center gap-3 text-sm rounded-full 
+                  py-1.5 px-4 bg-white"
+          >
+            <p className="text-gray-700 font-medium">
+              New AI feature integrated
+            </p>
+            <img src={assets.star_icon} alt="star-icon" className="w-3" />
+          </div>
         </div>
+
         <h1 className="text-3xl sm:text-6xl font-semibold sm:leading-16 text-gray-700">
           Your own <span className="text-primary">blogging</span> <br />
           platform
@@ -33,11 +51,11 @@ function Header() {
           </button>
         </form>
       </div>
-      <img
+      {/* <img
         src={assets.gradientBackground}
         alt="background"
         className="absolute -top-50 -z-1 opacity-70"
-      />
+      /> */}
     </div>
   );
 }
