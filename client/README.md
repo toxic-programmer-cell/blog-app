@@ -11,6 +11,7 @@
 - created Header component
 - created BlogList component
 - installed motion for animation(for BlogList category now)
+- created Blog cards component BlogCard.jsx
 
 # folder structure
 
