@@ -13,6 +13,7 @@
 - installed motion for animation(for BlogList category now)
 - created Blog cards component BlogCard.jsx
 - created Newsletter component
+- created Footer component
 
 # folder structure
 
