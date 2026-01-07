@@ -9,6 +9,8 @@ function Blog() {
   const { id } = useParams();
   const [blogData, setBlogData] = useState(null);
   const [commentData, setCommentData] = useState([]);
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
 
   const fetchBlogData = async () => {
     const data = blog_data.find((blog) => blog._id === id);
@@ -17,6 +19,10 @@ function Blog() {
 
   const fetchComment = async () => {
     setCommentData(comments_data);
+  };
+
+  const addComment = async (e) => {
+    e.preventDefault();
   };
 
   useEffect(() => {
@@ -103,14 +109,21 @@ function Blog() {
           {/* Add comment form */}
           <div className="max-w-3xl mx-auto">
             <p className="font-semibold mb-4">Add Your Comment</p>
-            <form className="flex flex-col items-start gap-4 max-w-lg">
+            <form
+              onSubmit={addComment}
+              className="flex flex-col items-start gap-4 max-w-lg"
+            >
               <input
+                onChange={(e) => setName(e.target.value)}
+                value={name}
                 type="text"
                 placeholder="Name"
                 required
                 className="w-full p-2 border border-gray-300 outline-none rounded-lg"
               />
               <textarea
+                onChange={(e) => setComment(e.target.value)}
+                value={comment}
                 placeholder="Comment"
                 className="w-full p-2 border border-gray-300 rounded-lg outline-none h-48"
               ></textarea>
@@ -121,6 +134,33 @@ function Blog() {
                 Submit
               </button>
             </form>
+          </div>
+
+          {/* Share Button */}
+          <div className="my-24 max-w-3xl mx-auto">
+            <p className="font-semibold my-4">
+              Share the Article on Social Media
+            </p>
+            <div className="flex gap-2">
+              <img
+                src={assets.facebook_icon}
+                alt=""
+                width={50}
+                className="cursor-pointer hover:scale-102 transition-all duration-200"
+              />
+              <img
+                src={assets.twitter_icon}
+                alt=""
+                width={50}
+                className="cursor-pointer hover:scale-102 transition-all duration-200"
+              />
+              <img
+                src={assets.googleplus_icon}
+                alt=""
+                width={50}
+                className="cursor-pointer hover:scale-102 transition-all duration-200"
+              />
+            </div>
           </div>
         </div>
       ) : (
