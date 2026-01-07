@@ -7,10 +7,6 @@ function Header() {
       <div className="absolute inset-0 -z-10 animate-gradient bg-gradient-to-r from-primary/30 via-purple-300/30 to-pink-300/30 blur-3xl"></div>
 
       <div className="text-center mt-20 mb-8 ">
-        {/* <div className="inline-flex items-center bg-primary/10 gap-4 text-sm rounded-full py-1.5 px-4 mb-2 border border-primary/10 ">
-          <p>New AI feature integrated</p>
-          <img src={assets.star_icon} alt="star-icon" className="w-2.5" />
-        </div> */}
         <div
           className="relative inline-flex p-[1.5px] mb-2 rounded-full 
                 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 
@@ -51,11 +47,6 @@ function Header() {
           </button>
         </form>
       </div>
-      {/* <img
-        src={assets.gradientBackground}
-        alt="background"
-        className="absolute -top-50 -z-1 opacity-70"
-      /> */}
     </div>
   );
 }

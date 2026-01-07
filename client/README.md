@@ -14,6 +14,7 @@
 - created Blog cards component BlogCard.jsx
 - created Newsletter component
 - created Footer component
+- created blog page (header, blog, comments, add comment form)
 
 # folder structure
 
