@@ -15,7 +15,7 @@ function Blog() {
 
   const fetchBlogData = async () => {
     const data = blog_data.find((blog) => blog._id === id);
-    // setBlogData(data);
+    setBlogData(data);
   };
 
   const fetchComment = async () => {
