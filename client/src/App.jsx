@@ -16,8 +16,8 @@ function App() {
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="/admin" element={<Layout />}>
           <Route index element={<Dashboard />} />
-          <Route path="/admin/listblog" element={<ListBlog />} />
-          <Route path="/admin/addblog" element={<AddBlog />} />
+          <Route path="/admin/list-blog" element={<ListBlog />} />
+          <Route path="/admin/add-blog" element={<AddBlog />} />
           <Route path="/admin/comments" element={<Comments />} />
         </Route>
       </Routes>
