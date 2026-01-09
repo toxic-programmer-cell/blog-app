@@ -1,7 +1,7 @@
 import React from "react";
 import { assets } from "../../assets/assets";
 import { Outlet, useNavigate } from "react-router-dom";
-import AdminSidebar from "../../components/AdminSidebar";
+import AdminSidebar from "../../components/admin/AdminSidebar";
 import Footer from "../../components/Footer";
 
 const Layout = () => {
