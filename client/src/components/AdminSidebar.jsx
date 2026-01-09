@@ -29,7 +29,7 @@ const AdminSidebar = () => {
 
   return (
     <div>
-      <Sidebar collapsed={colapsed} className="h-[calc(100vh-70px)] pt-3">
+      <Sidebar collapsed={colapsed}>
         <Menu
           menuItemStyles={{
             icon: {
