@@ -31,7 +31,7 @@ const Login = () => {
               Enter your credentials to access the admin panel
             </p>
           </div>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className="w-full">
             <div className="flex flex-col">
               <label>Email</label>
               <input
@@ -45,27 +45,31 @@ const Login = () => {
             </div>
             <div className="flex flex-col">
               <label>Password</label>
-              <div className="flex items-center">
+              <div className="flex items-center relative">
                 <input
                   onChange={(e) => setPassword(e.target.value)}
                   value={password}
                   required
                   type={showPassword ? "text" : "password"}
                   placeholder="Enter your email"
-                  className="border-b-2 border-gray-300 p-2 outline-none mb-6"
+                  className="border-b-2 border-gray-300 p-2 outline-none mb-6 w-full"
                 />
                 {showPassword ? (
-                  <FaEye
-                    className="pl-1.5 cursor-pointer"
-                    size={20}
-                    onClick={() => setShowPassword(!showPassword)}
-                  />
+                  <div className="absolute right-0 top-1/3 -translate-y-1/2">
+                    <FaEye
+                      className="pl-1.5 cursor-pointer"
+                      size={22}
+                      onClick={() => setShowPassword(!showPassword)}
+                    />
+                  </div>
                 ) : (
-                  <FaEyeSlash
-                    size={20}
-                    className="pl-1.5 cursor-pointer"
-                    onClick={() => setShowPassword(!showPassword)}
-                  />
+                  <div className="absolute right-0 top-1/3 -translate-y-1/2">
+                    <FaEyeSlash
+                      size={22}
+                      className="pl-1.5 cursor-pointer"
+                      onClick={() => setShowPassword(!showPassword)}
+                    />
+                  </div>
                 )}
               </div>
             </div>
