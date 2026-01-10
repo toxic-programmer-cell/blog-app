@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <>
       {/* navbar */}
-      <div className="flex justify-between items-center py-5 h-[86px] px-8 sm:px-20 xl:px-32 border-b-[1px] border-gray-200">
+      <div className="flex justify-between items-center py-5 h-21.5 px-8 sm:px-20 xl:px-32 border-b border-gray-200">
         <img
           src={assets.logo}
           alt="logo"
