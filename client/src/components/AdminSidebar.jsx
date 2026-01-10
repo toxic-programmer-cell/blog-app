@@ -29,7 +29,13 @@ const AdminSidebar = () => {
 
   return (
     <div>
-      <Sidebar collapsed={colapsed} className="h-[calc(100vh-70px)] pt-3">
+      <Sidebar
+        rootStyles={{
+          "--ps-sidebar-bg": "#ffffff",
+        }}
+        collapsed={colapsed}
+        className="h-[calc(100vh-70px)]"
+      >
         <Menu
           menuItemStyles={{
             icon: {
@@ -52,6 +58,7 @@ const AdminSidebar = () => {
             icon={<CgMoveRight size={30} color="#5044e5" />}
           ></MenuItem>
           <MenuItem
+            title="Dashboard"
             active={location.pathname === "/admin"}
             onClick={() => navigate("/admin")}
             icon={
@@ -64,6 +71,7 @@ const AdminSidebar = () => {
             Dashboard
           </MenuItem>
           <MenuItem
+            title="Add blogs"
             active={location.pathname === "/admin/add-blog"}
             onClick={() => navigate("/admin/add-blog")}
             icon={
@@ -78,6 +86,7 @@ const AdminSidebar = () => {
             Add blogs
           </MenuItem>
           <MenuItem
+            title="Blog list"
             active={location.pathname === "/admin/list-blog"}
             onClick={() => navigate("/admin/list-blog")}
             icon={
@@ -92,6 +101,7 @@ const AdminSidebar = () => {
             Blog list
           </MenuItem>
           <MenuItem
+            title="Comments"
             active={location.pathname === "/admin/comments"}
             onClick={() => navigate("/admin/comments")}
             icon={

@@ -2,13 +2,14 @@ import React from "react";
 import { assets } from "../../assets/assets";
 import { Outlet, useNavigate } from "react-router-dom";
 import AdminSidebar from "../../components/AdminSidebar";
+import Footer from "../../components/Footer";
 
 const Layout = () => {
   const navigate = useNavigate();
   return (
     <>
       {/* navbar */}
-      <div className="flex justify-between items-center py-5 h-[70px] mx-8 sm:mx-20 xl:mx-32">
+      <div className="flex justify-between items-center py-5 h-[87px] px-8 sm:px-20 xl:px-32 bg-primary/3">
         <img
           src={assets.logo}
           alt="logo"
@@ -25,10 +26,11 @@ const Layout = () => {
       </div>
 
       {/* content */}
-      <div className="flex h-[calc(100vh-70px)]">
+      <div className="flex h-[calc(100vh-87px)]">
         <AdminSidebar />
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 };
