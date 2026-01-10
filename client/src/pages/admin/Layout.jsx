@@ -1,7 +1,7 @@
 import React from "react";
 import { assets } from "../../assets/assets";
 import { Outlet, useNavigate } from "react-router-dom";
-import AdminSidebar from "../../components/AdminSidebar";
+import AdminSidebar from "../../components/admin/AdminSidebar";
 import Footer from "../../components/Footer";
 
 const Layout = () => {
@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <>
       {/* navbar */}
-      <div className="flex justify-between items-center py-5 h-[87px] px-8 sm:px-20 xl:px-32 bg-primary/3">
+      <div className="flex justify-between items-center py-5 h-[86px] px-8 sm:px-20 xl:px-32 border-b-[1px] border-gray-200">
         <img
           src={assets.logo}
           alt="logo"
@@ -26,7 +26,7 @@ const Layout = () => {
       </div>
 
       {/* content */}
-      <div className="flex h-[calc(100vh-87px)]">
+      <div className="flex h-[calc(100vh-86px)]">
         <AdminSidebar />
         <Outlet />
       </div>

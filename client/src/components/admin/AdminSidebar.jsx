@@ -29,13 +29,7 @@ const AdminSidebar = () => {
 
   return (
     <div>
-      <Sidebar
-        rootStyles={{
-          "--ps-sidebar-bg": "#ffffff",
-        }}
-        collapsed={colapsed}
-        className="h-[calc(100vh-70px)]"
-      >
+      <Sidebar collapsed={colapsed}>
         <Menu
           menuItemStyles={{
             icon: {
