@@ -26,7 +26,7 @@ const Layout = () => {
       </div>
 
       {/* content */}
-      <div className="flex h-[calc(100vh-86px)]">
+      <div className="flex min-h-[calc(100vh-86px)]">
         <AdminSidebar />
         <Outlet />
       </div>
