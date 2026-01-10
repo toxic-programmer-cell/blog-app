@@ -18,7 +18,7 @@ const BlogTableItem = ({ blog, fetchBlogs, index }) => {
           {blog.isPublished ? "Published" : "unpublished"}
         </p>
       </td>
-      <td className="px-2 py-4 text-xs gap-3 flex">
+      <td className="px-2 py-4 text-xs gap-3 flex flex-wrap items-center">
         <button className="border px-2 py-0.5 mt-1 rounded cursor-pointer">
           {blog.isPublished ? "unpublish" : "publish"}
         </button>
