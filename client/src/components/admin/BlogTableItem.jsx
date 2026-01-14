@@ -19,13 +19,17 @@ const BlogTableItem = ({ blog, fetchBlogs, index }) => {
         </p>
       </td>
       <td className="px-2 py-4 text-xs gap-3 flex flex-wrap items-center">
-        <button className="border px-2 py-0.5 mt-1 rounded cursor-pointer">
+        <button
+          className={`border px-2 py-0.5 mt-1 rounded cursor-pointer ${
+            blog.isPublished ? "text-red-400" : "text-green-400"
+          }`}
+        >
           {blog.isPublished ? "unpublish" : "publish"}
         </button>
         <img
           src={assets.cross_icon}
           alt=""
-          className="w-8 hover:scale-105 transition-all cursor-pointer"
+          className="w-8 hover:scale-105 transition-all cursor-pointer hidden lg:flex"
         />
       </td>
     </tr>
